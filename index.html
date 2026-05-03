@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Material suplementario | Cesación tabáquica</title>
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --accent-dark: #1d4ed8;
+      --border: #e5e7eb;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+    }
+
+    header p {
+      max-width: 850px;
+      margin: 0.5rem auto 0;
+      font-size: 1.05rem;
+      opacity: 0.95;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: -2rem auto 3rem;
+      padding: 0 1.25rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .article-info h2,
+    .materials h2,
+    .citation h2 {
+      margin-top: 0;
+      font-size: 1.35rem;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .meta-item {
+      border-left: 4px solid var(--accent);
+      background: #f9fafb;
+      padding: 0.85rem 1rem;
+      border-radius: 10px;
+    }
+
+    .meta-item strong {
+      display: block;
+      font-size: 0.88rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.25rem;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin-top: 1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 760px;
+    }
+
+    th, td {
+      padding: 0.95rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: #f3f4f6;
+      font-size: 0.9rem;
+      color: #374151;
+    }
+
+    tr:hover td {
+      background: #f9fafb;
+    }
+
+    .file-title {
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .file-desc {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 0.25rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--accent);
+      color: white;
+      padding: 0.5rem 0.75rem;
+      border-radius: 9px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .button:hover {
+      background: var(--accent-dark);
+    }
+
+    .button.secondary {
+      background: #e5e7eb;
+      color: #111827;
+    }
+
+    .button.secondary:hover {
+      background: #d1d5db;
+    }
+
+    code {
+      background: #f3f4f6;
+      padding: 0.15rem 0.35rem;
+      border-radius: 5px;
+    }
+
+    footer {
+      max-width: 1100px;
+      margin: 0 auto 2rem;
+      padding: 0 1.25rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Material suplementario</h1>
+    <p>
+      Tablas suplementarias del artículo sobre cesación tabáquica. Los archivos están disponibles para descarga y consulta.
+    </p>
+  </header>
+
+  <main>
+    <section class="card article-info">
+      <h2>Información del artículo</h2>
+      <p>
+        Esta página reúne los materiales suplementarios asociados con el manuscrito. Sustituye los campos siguientes con los datos definitivos del artículo.
+      </p>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <strong>Título</strong>
+          Cesación tabáquica: análisis de factores asociados y patrones de uso
+        </div>
+        <div class="meta-item">
+          <strong>Autores</strong>
+          Nombre Autor 1; Nombre Autor 2; Nombre Autor 3
+        </div>
+        <div class="meta-item">
+          <strong>Revista</strong>
+          Nombre de la revista
+        </div>
+        <div class="meta-item">
+          <strong>DOI</strong>
+          Pendiente
+        </div>
+      </div>
+    </section>
+
+    <section class="card materials">
+      <h2>Archivos suplementarios</h2>
+      <p>
+        Para facilitar la revisión, cada tabla se ofrece en formato Excel. También puedes incluir una versión HTML o PDF para visualización directa en el navegador.
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Material</th>
+              <th>Contenido</th>
+              <th>Formato</th>
+              <th>Acceso</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="file-title">Tabla suplementaria 1</div>
+                <div class="file-desc">Características sociodemográficas de la población de estudio.</div>
+              </td>
+              <td>Distribución por sexo, edad, escolaridad y grupo de cesación.</td>
+              <td>XLSX</td>
+              <td>
+                <div class="actions">
+                  <a class="button" href="supplementary/Cuadro suplementario_SI.xlsx" download>Descargar</a>
+                  <a class="button secondary" href="supplementary/Supplementary_Table_1.html">Ver tabla</a>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="file-title">Tabla suplementaria 2</div>
+                <div class="file-desc">Prevalencias estimadas por grupo de cesación.</div>
+              </td>
+              <td>Estimaciones ponderadas, errores estándar e intervalos de confianza.</td>
+              <td>XLSX</td>
+              <td>
+                <div class="actions">
+                  <a class="button" href="supplementary/Cuadro suplementario_S2.xlsx" download>Descargar</a>
+                  <a class="button secondary" href="supplementary/Supplementary_Table_2.html">Ver tabla</a>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="file-title">Tabla suplementaria 3</div>
+                <div class="file-desc">Modelos de regresión para factores asociados.</div>
+              </td>
+              <td>Razones de momios, intervalos de confianza y valores p.</td>
+              <td>XLSX</td>
+              <td>
+                <div class="actions">
+                  <a class="button" href="supplementary/Cuadro suplementario_S3.xlsx" download>Descargar</a>
+                  <a class="button secondary" href="supplementary/Supplementary_Table_3.html">Ver tabla</a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card citation">
+      <h2>Cómo citar</h2>
+      <p>
+        Austria-Corrales F, et al. <em>Título completo del artículo</em>. Nombre de la revista. Año; volumen(número): páginas. DOI: pendiente.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    Material suplementario alojado mediante GitHub Pages. Última actualización: 2026.
+  </footer>
+</body>
+</html>
